@@ -9,14 +9,20 @@ function todoList(todos) {
     let text = document.createTextNode(todos[i].todo);
     ul.appendChild(li);
     li.appendChild(text); 
-    
-    document.querySelector("li").addEventListener("click", function(){
-     document.querySelector("li").style.textDecoration = "line-through"; 
-    });
-       
-  }
- 
 
+    
+  
+    li.addEventListener('click', function (event) {
+    if (event.target.tagName === 'LI') {
+        li.style.textDecoration = "line-through";
+    }
+}, false);
+
+
+       
+    }
+
+    
   }
   
 

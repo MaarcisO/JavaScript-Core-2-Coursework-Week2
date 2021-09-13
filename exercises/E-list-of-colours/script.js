@@ -12,7 +12,7 @@ function listOfColours(colours) {
 
    
   }
-  
+  /*
  option.forEach(function(i){
    i.addEventListener("click", function(){
     pText.style.colour = colours[i]
@@ -20,7 +20,7 @@ function listOfColours(colours) {
  });
 
 
-}
+}*/
 
 
 
