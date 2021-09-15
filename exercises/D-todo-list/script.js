@@ -1,6 +1,5 @@
 let content = document.getElementById("content");
 
-
 function todoList(todos) {
   let ul = document.createElement("ul");
   content.appendChild(ul);
@@ -8,23 +7,16 @@ function todoList(todos) {
     let li = document.createElement("li");
     let text = document.createTextNode(todos[i].todo);
     ul.appendChild(li);
-    li.appendChild(text); 
-
-    
-  
-    li.addEventListener('click', function (event) {
-    if (event.target.tagName === 'LI') {
-        li.style.textDecoration = "line-through";
-    }
-}, false);
-
-
-       
-    }
-
-    
+    li.appendChild(text);    
+    li.addEventListener("click", function(event) {
+      if (li.classList.contains("lineThrough")) {
+            li.classList.remove("lineThrough");
+          } else {
+            li.classList.add("lineThrough");
+          }
+    })
   }
-  
+}
 
 const todos = [
   {todo: "wash the dishes"}, 
