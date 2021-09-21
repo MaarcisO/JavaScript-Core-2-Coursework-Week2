@@ -157,3 +157,27 @@ body {
     max-height: 80px;
   }
 }
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.pink-text {
+  color: pink;
+}
+
+.brown-text {
+  color: brown;
+}
